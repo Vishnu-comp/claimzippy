@@ -50,6 +50,15 @@ const AQI = () => {
 
   const API_KEY = '699cab3ee3eb1f353d0a18c0b5c96c9e7d77425f';
 
+  const getAQIIcon = (aqi) => {
+    if (aqi <= 50) return '🟢'; // Good (green)
+    if (aqi <= 100) return '🟡'; // Moderate (yellow)
+    if (aqi <= 150) return '🟠'; // Unhealthy for sensitive (orange)
+    if (aqi <= 200) return '🔴'; // Unhealthy (red)
+    if (aqi <= 300) return '🟣'; // Very unhealthy (purple)
+    return '⚫'; // Hazardous (black)
+  };
+
   const handleSearch = async () => {
     if (city.trim() === '') {
       alert('Please enter a city name.');
@@ -99,7 +108,7 @@ const AQI = () => {
       {result && (
         <div style={{ marginTop: '1em' }}>
           <p><strong>City:</strong> {result.city}</p>
-          <p><strong>AQI:</strong> {result.aqi}</p>
+          <p><strong>AQI:</strong> {result.aqi} {getAQIIcon(result.aqi)}</p>
           <p><strong>Last Updated:</strong> {result.time}</p>
         </div>
       )}
@@ -118,7 +127,15 @@ const Content = ({ data }) => (
     {data.map((section, index) => (
       <section id={section.title.toLowerCase().replace(' ', '-')} key={index}>
         <h2>{section.title}</h2>
-        <p>{section.content}</p>
+        <ul>
+          {section.content.split('\n').map((line, i) => {
+            // Check if the line starts with a bullet point
+            if (line.trim().startsWith('-')) {
+              return <li key={i}>{line.trim().slice(1).trim()}</li>; // Remove the leading '-'
+            }
+            return <p key={i}>{line}</p>;
+          })}
+        </ul>
       </section>
     ))}
   </main>

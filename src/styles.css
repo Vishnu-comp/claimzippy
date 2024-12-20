@@ -1,4 +1,4 @@
-/* General Styles */
+
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
 
 body {
@@ -9,7 +9,6 @@ body {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Animation for fading in */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -28,7 +27,7 @@ header {
     animation: slideDown 0.8s ease-out;
 }
 
-/* Animation for sliding down the header */
+
 @keyframes slideDown {
     from {
         transform: translateY(-100%);
@@ -84,7 +83,7 @@ main {
     animation: contentFadeIn 1s ease-in-out;
 }
 
-/* Animation for fading in main content */
+
 @keyframes contentFadeIn {
     from {
         opacity: 0;
@@ -104,12 +103,11 @@ section {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Hover effect for sections */
 section:hover {
     transform: translateY(-5px);
 }
 
-/* Animation for sliding in the sections */
+
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -139,7 +137,7 @@ footer {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* AQI Section Styles */
+
 .aqi-section {
     background-color: #ffffff;
     margin: 1em 0;
@@ -150,7 +148,7 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Hover effect for AQI section */
+
 .aqi-section:hover {
     transform: translateY(-5px);
 }
@@ -161,14 +159,14 @@ footer {
     font-size: 1.5em;
 }
 
-/* Pulse Animation for AQI */
+
 .aqi-result {
     font-size: 1.2em;
     font-weight: bold;
     animation: pulse 1.5s infinite;
 }
 
-/* Pulse effect for AQI */
+
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -222,7 +220,6 @@ footer {
     transform: scale(1.1);
 }
 
-/* Floating Action Button (Scroll to Top) */
 .fab {
     position: fixed;
     bottom: 20px;
@@ -242,12 +239,11 @@ footer {
     transform: scale(1.1);
 }
 
-/* Smooth Scroll on Button Click */
 html {
     scroll-behavior: smooth;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 1200px) {
     header h1 {
         font-size: 1.8em;

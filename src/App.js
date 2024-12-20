@@ -18,6 +18,9 @@ const App = () => {
       <Header />
       <Content data={content} />
       <AQI />
+      <br/>
+      <br/>
+      
       <Footer />
     </div>
   );
