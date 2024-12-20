@@ -62,6 +62,7 @@ const AQI = () => {
         <button onClick={handleSearch} disabled={loading}>
           {loading ? 'Loading...' : 'Check Air Quality'}
         </button>
+        <br/>
       </div>
       {error && <p style={{ color: 'red', marginTop: '1em' }}>{error}</p>}
       {result && (
@@ -69,9 +70,12 @@ const AQI = () => {
           <p><strong>City:</strong> {result.city}</p>
           <p><strong>AQI:</strong> {result.aqi} {getAQIIcon(result.aqi)}</p>
           <p><strong>Last Updated:</strong> {result.time}</p>
+          <br/>
         </div>
+        
       )}
     </section>
+    
   );
 };
 
