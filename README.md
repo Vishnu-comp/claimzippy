@@ -20,4 +20,12 @@ This is a web application designed to display the Air Quality Index (AQI) of a g
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/aqi-web-app.git
+   git clone [https://github.com/your-username/aqi-web-app.git](https://github.com/Vishnu-comp/claimzippy.git)
+
+
+
+![image](https://github.com/user-attachments/assets/4241b59b-5d82-4486-969a-5449d83b2c1f)
+
+
+![image](https://github.com/user-attachments/assets/e8fd56ba-60f7-47e1-b8c4-958868cd2002)
+
