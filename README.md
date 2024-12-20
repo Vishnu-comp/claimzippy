@@ -15,6 +15,10 @@ This is a web application designed to display the Air Quality Index (AQI) of a g
 - **Google Fonts**: For custom font styling (`Lora` font).
 - **API (optional)**: For fetching AQI data (if applicable, mention the API you’re using here).
 
+## Deployed Link
+You can view the live application here: [Air Quality Index Web App](https://claimzippy-psi.vercel.app/)
+
+
 ## Installation
 
 1. **Clone the repository**:
