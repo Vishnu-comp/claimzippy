@@ -9,8 +9,8 @@ This is a web application designed to display the Air Quality Index (AQI) of a g
 - Floating Action Button (FAB) for quick access to the form.
 
 ## Technologies Used
-- **HTML5**: Structure and content of the web pages.
-- **CSS3**: Styling with custom animations and responsive design.
+- **HTML**: Structure and content of the web pages.
+- **CSS**: Styling with custom animations and responsive design.
 - **JavaScript**: Dynamic behavior and event handling (if applicable for AQI data fetching and form submission).
 - **Google Fonts**: For custom font styling (`Lora` font).
 - **API (optional)**: For fetching AQI data (if applicable, mention the API you’re using here).
