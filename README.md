@@ -24,7 +24,7 @@ You can view the live application here: [Air Quality Index Web App](https://clai
 1. **Clone the repository**:
 
    ```bash
-   git clone [https://github.com/your-username/aqi-web-app.git](https://github.com/Vishnu-comp/claimzippy.git)
+   git clone (https://github.com/Vishnu-comp/claimzippy.git)
 
 
 
